@@ -1,112 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-  <!-- Primary SEO -->
-  <title>The Contractor’s Little Black Book | Field-ready guidance for contractors</title>
-  <meta
-    name="description"
-    content="Field-ready guidance for contractors: boundaries, scope control, client friction handling, documentation prompts, and practical decision support — usable across any trade."
-  />
-  <link rel="canonical" href="https://contractorsblackbook.com/" />
+    <!-- Primary SEO -->
+    <title>
+      The Contractor’s Little Black Book | Contractor guidance SDK for scope
+      control
+    </title>
+    <meta
+      name="description"
+      content="Field-ready guidance for contractors: boundaries, scope control, client friction handling, documentation prompts, and practical decision support — usable across any trade."
+    />
+    <link rel="canonical" href="https://contractorsblackbook.com/" />
 
-  <!-- Indexing -->
-  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <!-- Indexing -->
+    <meta
+      name="robots"
+      content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
+    />
 
-  <!-- Optional: a few focused keywords (not critical, but fine) -->
-  <meta
-    name="keywords"
-    content="contractor workflow, scope creep, change orders, client management, contractor checklist, construction documentation, contractor SOP, job risk flags, contractor tools"
-  />
+    <!-- Optional keywords -->
+    <meta
+      name="keywords"
+      content="contractor workflow, scope creep, change orders, client management, contractor checklist, construction documentation, contractor SOP, job risk flags, contractor tools"
+    />
 
-  <!-- Theme / UX -->
-  <meta name="theme-color" content="#0b0f14" />
+    <!-- Theme -->
+    <meta name="theme-color" content="#0b0f14" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="The Contractor’s Little Black Book" />
-  <meta
-    property="og:description"
-    content="Field-ready guidance for contractors: boundaries, workflows, client friction handling, and decision clarity."
-  />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://contractorsblackbook.com/" />
-  <meta property="og:site_name" content="The Contractor’s Little Black Book" />
-  <meta property="og:image" content="https://contractorsblackbook.com/contractors-little-black-book.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="en_CA" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="The Contractor’s Little Black Book" />
+    <meta
+      property="og:description"
+      content="Field-ready guidance for contractors: boundaries, workflows, client friction handling, and decision clarity."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://contractorsblackbook.com/" />
+    <meta
+      property="og:site_name"
+      content="The Contractor’s Little Black Book"
+    />
+    <meta
+      property="og:image"
+      content="https://contractorsblackbook.com/contractors-little-black-book.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_CA" />
 
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="The Contractor’s Little Black Book" />
-  <meta
-    name="twitter:description"
-    content="Field-ready guidance for contractors: boundaries, scope control, and client friction handling."
-  />
-  <meta name="twitter:image" content="https://contractorsblackbook.com/contractors-little-black-book.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="The Contractor’s Little Black Book" />
+    <meta
+      name="twitter:description"
+      content="Field-ready guidance for contractors: boundaries, scope control, and client friction handling."
+    />
+    <meta
+      name="twitter:image"
+      content="https://contractorsblackbook.com/contractors-little-black-book.png"
+    />
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/icon.png" />
-  <link rel="apple-touch-icon" href="/icon.png" />
-  <link rel="icon" href="/favicon.png" sizes="any" />
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="icon" href="/favicon.png" sizes="any" />
 
-  <!-- Structured Data (JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
+    <!-- Structured Data -->
+    <script type="application/ld+json">
       {
-        "@type": "Organization",
-        "@id": "https://contractorsblackbook.com/#org",
-        "name": "The Contractor’s Little Black Book",
-        "url": "https://contractorsblackbook.com/",
-        "logo": "https://contractorsblackbook.com/icon.png"
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://contractorsblackbook.com/#website",
-        "url": "https://contractorsblackbook.com/",
-        "name": "The Contractor’s Little Black Book",
-        "publisher": { "@id": "https://contractorsblackbook.com/#org" },
-        "inLanguage": "en-CA"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://contractorsblackbook.com/#webpage",
-        "url": "https://contractorsblackbook.com/",
-        "name": "The Contractor’s Little Black Book",
-        "isPartOf": { "@id": "https://contractorsblackbook.com/#website" },
-        "about": { "@id": "https://contractorsblackbook.com/#org" },
-        "description": "Field-ready guidance for contractors: boundaries, scope control, client friction handling, documentation prompts, and practical decision support.",
-        "inLanguage": "en-CA"
-      },
-      {
-        "@type": "SoftwareApplication",
-        "name": "Contractors Black Book SDK",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web",
-        "url": "https://contractorsblackbook.com/",
-        "description": "Embeddable guidance modules, intake checklists, dispute-safe notes, and lightweight risk flags for contractor workflows.",
-        "publisher": { "@id": "https://contractorsblackbook.com/#org" }
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://contractorsblackbook.com/#org",
+            "name": "The Contractor’s Little Black Book",
+            "url": "https://contractorsblackbook.com/",
+            "logo": "https://contractorsblackbook.com/icon.png"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://contractorsblackbook.com/#website",
+            "url": "https://contractorsblackbook.com/",
+            "name": "The Contractor’s Little Black Book",
+            "publisher": { "@id": "https://contractorsblackbook.com/#org" },
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://contractorsblackbook.com/#webpage",
+            "url": "https://contractorsblackbook.com/",
+            "name": "The Contractor’s Little Black Book",
+            "isPartOf": { "@id": "https://contractorsblackbook.com/#website" },
+            "about": { "@id": "https://contractorsblackbook.com/#org" },
+            "description": "Field-ready guidance for contractors: boundaries, scope control, client friction handling, documentation prompts, and practical decision support.",
+            "inLanguage": "en-CA"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "Contractors Black Book SDK",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://contractorsblackbook.com/",
+            "description": "Hosted SDK for embedding contractor guidance modules, intake checklists, dispute-safe notes, and lightweight job risk flags. Web dashboard version connects to the same database (coming soon).",
+            "publisher": { "@id": "https://contractorsblackbook.com/#org" }
+          }
+        ]
       }
-    ]
-  }
-  </script>
+    </script>
 
-  <link rel="stylesheet" href="/styles.css" />
-</head>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
 
   <body>
     <header class="header">
       <div class="container nav">
         <div class="brand">
-          <img
-            class="logo"
-            src="/icon.png"
-            alt="Black Book icon"
-          />
+          <img class="logo" src="/icon.png" alt="The Contractor’s Little Black Book logo" />
           <span>The Contractor’s Little Black Book</span>
         </div>
         <nav class="links">
@@ -121,15 +132,20 @@
       <section class="hero">
         <div class="container hero-grid">
           <div>
-            <h1>Field wisdom for difficult clients. COMING SOON</h1>
+            <h1>Contractor guidance SDK for difficult clients and scope control</h1>
+
             <p class="subhead">
-              A contractor-first reference system for boundaries, client
-              friction, and decision clarity — designed to be calm, practical,
-              and usable across any trade.
+              A contractor-first reference system for boundaries, client friction,
+              and decision clarity — designed to be calm, practical, and usable
+              across any trade.
+            </p>
+
+            <p class="muted small" ">
+              Coming soon — SDK hosting first, with a web dashboard connected to the same database next.
             </p>
 
             <div class="cta-row">
-              <a class="btn primary" href="#sdk">Get the SDK</a>
+              <a class="btn primary" href="#sdk">Download the SDK</a>
               <a class="btn ghost" href="#contact">Request access</a>
             </div>
 
@@ -143,22 +159,26 @@
 
           <div class="card preview">
             <div class="preview-top">
-              <div class="pill">Launch Kit</div>
-              <div class="pill">SDK + Docs</div>
+              <div class="pill">SDK Hosting</div>
+              <div class="pill">Docs + Examples</div>
             </div>
-            <h3>Integrate in minutes</h3>
+            <h3>Integrate guidance into your tools</h3>
             <p>
-              Embed guidance modules, intake checklists, dispute-safe notes, and
-              simple risk flags inside your tools.
+              Pull calm, field-tested decision support into your apps: checklists,
+              scripts, dispute-safe notes, and lightweight risk flags. A web
+              dashboard connected to the same database is coming next.
             </p>
+<img
+  src="/contractors-little-black-book.png"
+  alt="Contractor guidance SDK interface showing risk flags, scope notes, and decision support"
+  class="preview-image"
+/>
 
             <div class="codebox">
               <code>
-                &lt;script
-                src="/sdk/contractors-little-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
+                &lt;script src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
                 &lt;script&gt;<br />
-                &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId:
-                "demo" });<br />
+                &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId: "demo" });<br />
                 &nbsp;&nbsp;console.log(cbb.version);<br />
                 &lt;/script&gt;
               </code>
@@ -207,44 +227,46 @@
         <div class="container">
           <h2>SDK</h2>
           <p class="muted">
-            Host the SDK right on this domain. Choose ESM (modern) or UMD
-            (drop-in script).
+            Download the SDK package from this domain. Use it in Expo / React Native
+            apps or web tools, and connect to the same backend as the upcoming web dashboard.
           </p>
 
           <div class="grid">
             <div class="card">
-              <h3>ESM import</h3>
-              <div class="codebox">
-                <code>
-                  import { create } from
-                  "/sdk/contractors-black-book-sdk.esm.js";<br />
-                  const cbb = create({ orgId: "your-org" });<br />
-                  const result = cbb.assess({ notes: "Client wants work before
-                  deposit." });
-                </code>
-              </div>
+              <h3>Download</h3>
+              <p>
+                Get the latest SDK bundle (UMD + ESM + docs + examples).
+              </p>
+
+              <!-- Update the href to your real zip file path -->
+              <a class="btn primary" href="/sdk/contractors-black-book-sdk.zip" download>
+                Download SDK (.zip)
+              </a>
+
+              <p class="muted small" ">
+                If you prefer a single file: <a href="/sdk/contractors-black-book-sdk.min.js" download>UMD</a> ·
+                <a href="/sdk/contractors-black-book-sdk.esm.js" download>ESM</a>
+              </p>
             </div>
 
             <div class="card">
-              <h3>Script tag (UMD)</h3>
+              <h3>Quick embed (UMD)</h3>
               <div class="codebox">
                 <code>
-                  &lt;script
-                  src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
+                  &lt;script src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
                   &lt;script&gt;<br />
-                  &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({
-                  orgId: "your-org" });<br />
-                  &nbsp;&nbsp;console.log(cbb.version);<br />
+                  &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId: "your-org" });<br />
+                  &nbsp;&nbsp;const result = cbb.assess({ notes: "Client wants work before deposit." });<br />
+                  &nbsp;&nbsp;console.log(result);<br />
                   &lt;/script&gt;
                 </code>
               </div>
-              <p class="muted small">Full docs: <a href="/sdk/">/sdk/</a></p>
             </div>
           </div>
 
           <div class="notice">
-            <strong>Note:</strong> This is an early SDK host page. You can lock
-            it down later (tokens, signed URLs, tiering).
+            <strong>Note:</strong> This is the public SDK download page. You can lock it down later
+            (tokens, signed URLs, tiering) without changing your marketing page.
           </div>
         </div>
       </section>
@@ -276,9 +298,7 @@
 
       <footer class="footer">
         <div class="container foot">
-          <span
-            >© <span id="year"></span> The Contractor’s Little Black Book</span
-          >
+          <span>© <span id="year"></span> The Contractor’s Little Black Book</span>
           <span class="muted">Built by App Intelligence</span>
         </div>
       </footer>
