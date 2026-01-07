@@ -1,6 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
+    
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>The Contractor’s Little Black Book</title>
@@ -8,13 +10,32 @@
       name="description"
       content="Field-ready guidance for contractors: boundaries, workflows, client friction, and practical decision support."
     />
+    <!-- Open Graph -->
+<meta property="og:title" content="The Contractor’s Little Black Book" />
+<meta property="og:description" content="Field wisdom for difficult jobs." />
+<meta property="og:image" content="https://contractorslittleblackbook.com/contractors-black-book.png" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://contractorslittleblackbook.com/" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+
+    <!-- Favicon & App Icons -->
+    <link rel="icon" type="image/png" href="/icon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+<link rel="icon" href="/favicon.ico" sizes="any">
+
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container nav">
         <div class="brand">
-          <img class="logo" src="/contractors-black-book.png" alt="Black Book icon" />
+          <img
+            class="logo"
+            src="/contractors-black-book.png"
+            alt="Black Book icon"
+          />
           <span>The Contractor’s Little Black Book</span>
         </div>
         <nav class="links">
@@ -31,8 +52,9 @@
           <div>
             <h1>Field wisdom for difficult jobs.</h1>
             <p class="subhead">
-              A contractor-first reference system for boundaries, client friction, and decision clarity —
-              designed to be calm, practical, and usable across any trade.
+              A contractor-first reference system for boundaries, client
+              friction, and decision clarity — designed to be calm, practical,
+              and usable across any trade.
             </p>
 
             <div class="cta-row">
@@ -55,14 +77,17 @@
             </div>
             <h3>Integrate in minutes</h3>
             <p>
-              Embed guidance modules, intake checklists, dispute-safe notes, and simple risk flags inside your tools.
+              Embed guidance modules, intake checklists, dispute-safe notes, and
+              simple risk flags inside your tools.
             </p>
 
             <div class="codebox">
               <code>
-                &lt;script src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
+                &lt;script
+                src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
                 &lt;script&gt;<br />
-                &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId: "demo" });<br />
+                &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId:
+                "demo" });<br />
                 &nbsp;&nbsp;console.log(cbb.version);<br />
                 &lt;/script&gt;
               </code>
@@ -77,19 +102,31 @@
           <div class="grid">
             <div class="card">
               <h3>Boundaries & scope clarity</h3>
-              <p>Prevent scope creep with clear steps, documentation prompts, and decision checkpoints.</p>
+              <p>
+                Prevent scope creep with clear steps, documentation prompts, and
+                decision checkpoints.
+              </p>
             </div>
             <div class="card">
               <h3>Client friction handling</h3>
-              <p>Scripts and de-escalation pathways that keep things professional and safe.</p>
+              <p>
+                Scripts and de-escalation pathways that keep things professional
+                and safe.
+              </p>
             </div>
             <div class="card">
               <h3>Job risk flags</h3>
-              <p>Lightweight risk tags (payment, access, safety, change order patterns) to protect your time.</p>
+              <p>
+                Lightweight risk tags (payment, access, safety, change order
+                patterns) to protect your time.
+              </p>
             </div>
             <div class="card">
               <h3>Repeatable workflows</h3>
-              <p>Turn hard-earned lessons into checklists and templates your crew can actually follow.</p>
+              <p>
+                Turn hard-earned lessons into checklists and templates your crew
+                can actually follow.
+              </p>
             </div>
           </div>
         </div>
@@ -99,7 +136,8 @@
         <div class="container">
           <h2>SDK</h2>
           <p class="muted">
-            Host the SDK right on this domain. Choose ESM (modern) or UMD (drop-in script).
+            Host the SDK right on this domain. Choose ESM (modern) or UMD
+            (drop-in script).
           </p>
 
           <div class="grid">
@@ -107,9 +145,11 @@
               <h3>ESM import</h3>
               <div class="codebox">
                 <code>
-                  import { create } from "/sdk/contractors-black-book-sdk.esm.js";<br />
+                  import { create } from
+                  "/sdk/contractors-black-book-sdk.esm.js";<br />
                   const cbb = create({ orgId: "your-org" });<br />
-                  const result = cbb.assess({ notes: "Client wants work before deposit." });
+                  const result = cbb.assess({ notes: "Client wants work before
+                  deposit." });
                 </code>
               </div>
             </div>
@@ -118,21 +158,22 @@
               <h3>Script tag (UMD)</h3>
               <div class="codebox">
                 <code>
-                  &lt;script src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
+                  &lt;script
+                  src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
                   &lt;script&gt;<br />
-                  &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId: "your-org" });<br />
+                  &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({
+                  orgId: "your-org" });<br />
                   &nbsp;&nbsp;console.log(cbb.version);<br />
                   &lt;/script&gt;
                 </code>
               </div>
-              <p class="muted small">
-                Full docs: <a href="/sdk/">/sdk/</a>
-              </p>
+              <p class="muted small">Full docs: <a href="/sdk/">/sdk/</a></p>
             </div>
           </div>
 
           <div class="notice">
-            <strong>Note:</strong> This is an early SDK host page. You can lock it down later (tokens, signed URLs, tiering).
+            <strong>Note:</strong> This is an early SDK host page. You can lock
+            it down later (tokens, signed URLs, tiering).
           </div>
         </div>
       </section>
@@ -140,7 +181,9 @@
       <section id="contact" class="section">
         <div class="container">
           <h2>Contact</h2>
-          <p class="muted">Want access, a demo, or an integration? Send a quick note.</p>
+          <p class="muted">
+            Want access, a demo, or an integration? Send a quick note.
+          </p>
 
           <form class="form" id="contactForm">
             <div class="row">
@@ -148,7 +191,12 @@
               <input name="email" type="email" placeholder="Email" required />
             </div>
             <input name="company" placeholder="Company (optional)" />
-            <textarea name="message" rows="5" placeholder="What are you building?" required></textarea>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="What are you building?"
+              required
+            ></textarea>
             <button class="btn primary" type="submit">Send</button>
             <p class="muted small" id="formStatus"></p>
           </form>
@@ -157,7 +205,9 @@
 
       <footer class="footer">
         <div class="container foot">
-          <span>© <span id="year"></span> The Contractor’s Little Black Book</span>
+          <span
+            >© <span id="year"></span> The Contractor’s Little Black Book</span
+          >
           <span class="muted">Built by App Intelligence</span>
         </div>
       </footer>
