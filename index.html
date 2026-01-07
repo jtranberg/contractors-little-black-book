@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>The Contractor’s Little Black Book</title>
+    <meta
+      name="description"
+      content="Field-ready guidance for contractors: boundaries, workflows, client friction, and practical decision support."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav">
+        <div class="brand">
+          <img class="logo" src="/contractors-black-book.png" alt="Black Book icon" />
+          <span>The Contractor’s Little Black Book</span>
+        </div>
+        <nav class="links">
+          <a href="#sdk">SDK</a>
+          <a href="#use-cases">Use Cases</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <h1>Field wisdom for difficult jobs.</h1>
+            <p class="subhead">
+              A contractor-first reference system for boundaries, client friction, and decision clarity —
+              designed to be calm, practical, and usable across any trade.
+            </p>
+
+            <div class="cta-row">
+              <a class="btn primary" href="#sdk">Get the SDK</a>
+              <a class="btn ghost" href="#contact">Request access</a>
+            </div>
+
+            <div class="chips">
+              <span>Cross-trade</span>
+              <span>Mobile-first</span>
+              <span>Expo / React Native</span>
+              <span>Web integrations</span>
+            </div>
+          </div>
+
+          <div class="card preview">
+            <div class="preview-top">
+              <div class="pill">Launch Kit</div>
+              <div class="pill">SDK + Docs</div>
+            </div>
+            <h3>Integrate in minutes</h3>
+            <p>
+              Embed guidance modules, intake checklists, dispute-safe notes, and simple risk flags inside your tools.
+            </p>
+
+            <div class="codebox">
+              <code>
+                &lt;script src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
+                &lt;script&gt;<br />
+                &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId: "demo" });<br />
+                &nbsp;&nbsp;console.log(cbb.version);<br />
+                &lt;/script&gt;
+              </code>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="use-cases" class="section">
+        <div class="container">
+          <h2>What it’s for</h2>
+          <div class="grid">
+            <div class="card">
+              <h3>Boundaries & scope clarity</h3>
+              <p>Prevent scope creep with clear steps, documentation prompts, and decision checkpoints.</p>
+            </div>
+            <div class="card">
+              <h3>Client friction handling</h3>
+              <p>Scripts and de-escalation pathways that keep things professional and safe.</p>
+            </div>
+            <div class="card">
+              <h3>Job risk flags</h3>
+              <p>Lightweight risk tags (payment, access, safety, change order patterns) to protect your time.</p>
+            </div>
+            <div class="card">
+              <h3>Repeatable workflows</h3>
+              <p>Turn hard-earned lessons into checklists and templates your crew can actually follow.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="sdk" class="section alt">
+        <div class="container">
+          <h2>SDK</h2>
+          <p class="muted">
+            Host the SDK right on this domain. Choose ESM (modern) or UMD (drop-in script).
+          </p>
+
+          <div class="grid">
+            <div class="card">
+              <h3>ESM import</h3>
+              <div class="codebox">
+                <code>
+                  import { create } from "/sdk/contractors-black-book-sdk.esm.js";<br />
+                  const cbb = create({ orgId: "your-org" });<br />
+                  const result = cbb.assess({ notes: "Client wants work before deposit." });
+                </code>
+              </div>
+            </div>
+
+            <div class="card">
+              <h3>Script tag (UMD)</h3>
+              <div class="codebox">
+                <code>
+                  &lt;script src="/sdk/contractors-black-book-sdk.min.js"&gt;&lt;/script&gt;<br />
+                  &lt;script&gt;<br />
+                  &nbsp;&nbsp;const cbb = ContractorsBlackBookSDK.create({ orgId: "your-org" });<br />
+                  &nbsp;&nbsp;console.log(cbb.version);<br />
+                  &lt;/script&gt;
+                </code>
+              </div>
+              <p class="muted small">
+                Full docs: <a href="/sdk/">/sdk/</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="notice">
+            <strong>Note:</strong> This is an early SDK host page. You can lock it down later (tokens, signed URLs, tiering).
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">Want access, a demo, or an integration? Send a quick note.</p>
+
+          <form class="form" id="contactForm">
+            <div class="row">
+              <input name="name" placeholder="Name" required />
+              <input name="email" type="email" placeholder="Email" required />
+            </div>
+            <input name="company" placeholder="Company (optional)" />
+            <textarea name="message" rows="5" placeholder="What are you building?" required></textarea>
+            <button class="btn primary" type="submit">Send</button>
+            <p class="muted small" id="formStatus"></p>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container foot">
+          <span>© <span id="year"></span> The Contractor’s Little Black Book</span>
+          <span class="muted">Built by App Intelligence</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
